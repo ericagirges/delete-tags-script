@@ -39,7 +39,7 @@ $(function () {
   }
 
 
-
+  // get all users data then extract and store only the user ids
   function getAllUserIds(client) {
     let settings = {
       url: "/api/v2/users.json",
@@ -49,7 +49,7 @@ $(function () {
 
     client.request(settings).then(function (data) {
       allUsers = data
-      console.log("errryone: ", allUsers)
+      console.log(allUsers)
       allUsers.users.map(function(user) {     
         return allUserIds.push(user.id)
     })
@@ -57,17 +57,6 @@ $(function () {
   }
 });
 
-function checkYourWork() {
-  let settings = {
-    url: "/api/v2/users.json",
-    type: "GET",
-    dataType: "json",
-  };
-
-  client.request(settings).then(function (data) {
-    console.log("ARE MY TAGS HERE? ", data)
-  })
-}
 
 function deleteTags() {
   let body = {
