@@ -1,15 +1,8 @@
-# App name
+# Delete All Tags Script for Zendesk
 
-[brief description of the app]
+Small Zendesk app to display deleting tags from a single user AND deleting tags from all users with a bulk update
 
-### The following information is displayed:
+### Get Started:
 
-* info1
-* info2
-* info3
+* zat server to run Zendesk App Framework locally
 
-Please submit bug reports to [Insert Link](). Pull requests are welcome.
-
-### Screenshot(s):
-[put your screenshots down here.]
-# delete-tags-script
