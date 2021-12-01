@@ -57,7 +57,7 @@ $(function () {
   }
 });
 
-
+// onClick function to delete tags for specific user by id
 function deleteTags() {
   let body = {
     user: {
@@ -85,6 +85,7 @@ function deleteTags() {
   }
 }
 
+//onClick function to delete all tags from all users in a bulk update
 function deleteAllUserTags() {
   let body = {
     user: {
