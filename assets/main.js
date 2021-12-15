@@ -65,7 +65,7 @@ function deleteTags() {
     },
   };
   let userTags = user.user.tags;
-  console.log("HELLO: ", userTags);
+  console.log(userTags);
   if (userTags.length > 0) {
     let settings = {
       url: "/api/v2/users/" + user.user.id + ".json",
@@ -75,9 +75,7 @@ function deleteTags() {
     };
 
     client.request(settings).then(function (data) {
-      console.log("IS THIS WORKING??");
       console.log(data);
-      checkYourWork()
     }),
       function (response) {
         console.error(response);
@@ -100,7 +98,6 @@ function deleteAllUserTags() {
   };
 
   client.request(settings).then(function (data) {
-    console.log("IS THIS WORKING??");
     console.log(data);
   }),
     function (response) {
